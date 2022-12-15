@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resoluçaõ correta do exercicio anterir</title>
+</head>
+<body>
+    <input type="number" id="numero" placeholder="Digite um número" onkeyup="mostrarTabuada()">
+    <div id="resultado"></div> 
+
+    <script>
+
+        function mostrarTabuada(){
+            console.log("entrei");//varifica se entrou algun dado
+            var numero = document.querySelector('#numero');
+            var resultado = document.querySelector('#resultado');
+            resultado.innerText = "";
+
+            // responsavel pelo resultado
+            for(var i = 0 ; i <= 10 ;i++){
+                var div = document.createElement('div');
+                div.innerText = numero.value * i;
+                resultado.appendChild(div);
+            }
+        }
+
+    </script>
+</body>
+</html>

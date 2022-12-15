@@ -1,0 +1,11 @@
+// 1. Crie uma programa que dado um numero imprima a sua tabuada.
+
+
+let numero = 4;
+let tabuada = numero * 3
+
+for (let i = 0; numero <= 10; i++) {
+    const element = numero[i];
+    
+}
+console.log(numero)

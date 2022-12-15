@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>verção com metodos antigoa</title>
+</head>
+<body>
+    <input type="number" id="numero" placeholder="Digite um numero">
+    <input type="button" value="click" onclick="Tabuada()">
+    <div id="resultado">Resultado</div><!--Sera exibido o resultado-->
+
+
+    <script>
+
+        function Tabuada(){
+            console.log('DeuCerto')
+            var numero = document.getElementById('numero');
+            var resultado = document.getElementById('resultado');
+            // Auterar a div para exinir o resuldo
+            resultado.innerText = '';
+
+            for(var i = 0; i <=10; i++){
+                var div = document.createElement('div');
+                div.innerText = numero.value * i;
+                resultado.appendChild(div);
+            }
+        }
+
+    </script>
+</body>
+</html>

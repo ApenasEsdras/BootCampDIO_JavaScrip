@@ -1,0 +1,28 @@
+<!-- cacular gasto de gasolina de um carra em viage -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+
+    let distanciaAPercorrer = Number(prompt("Digite sua distancia a percorrer em KM: "));
+    let ConsumoCarroPorKm = Number(prompt("Digite o consumo do seu carro por KM: "));
+    let valorCombustivel = Number(prompt("Digite valor do combustivel me R$: "));
+
+    let gastoCombustivel = (distanciaAPercorrer / ConsumoCarroPorKm) * valorCombustivel;
+    window.alert("sue gasto foi de: " + gastoCombustivel + " R$")
+
+
+</script>
+
+</html>
